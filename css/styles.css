@@ -199,12 +199,27 @@ img {
 .hero > .container {
   width: 696px;
 }
-
+.section-hero-bg {
+  background-color: var(--footer-background-color);
+}
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 600px;
+
   text-align: center;
-  background-color: var(--footer-background-color);
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero-bg-img.jpg');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -228,6 +243,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--primary-title-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:focus,
 .hero-btn:hover {
